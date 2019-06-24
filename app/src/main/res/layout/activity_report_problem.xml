@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.merchanthack.paypal.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Contact seller"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="4dp"
+            android:background="@color/colorBgDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:width="0dp"
+                    android:text="Wednesday, 13 March 2019" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:width="0dp"
+                    android:text="$7,589.00"
+                    android:textAlignment="textEnd" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Payment to BEST BUY MEXICO"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="4dp"
+                android:background="@color/colorBgDark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Select the item (s) with a problem"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPaypalBlue"
+                android:text="Sony - Audífonos Bluetooth WH-1000XM2 - Negro"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:buttonTint="@color/colorPaypalBlue"
+                android:text="JBL – Audífonos T600BTNC - Negro"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="4dp"
+                android:background="@color/colorBgDark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="What did you purchase?"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="48"
+                    android:background="@drawable/toggle_selector"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="20dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPaypalBlue"
+                    android:textOff="Product"
+
+                    android:textOn="Product" />
+
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="48"
+                    android:background="@drawable/toggle_selector"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="20dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPaypalBlue"
+                    android:textOff="Service, ticket or digital good"
+                    android:textOn="Service, ticket or digital good" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="What's wrong with the item?"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="48"
+                    android:background="@drawable/toggle_selector"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPaypalBlue"
+                    android:textOff="Damaged"
+                    android:textOn="Damaged" />
+
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="48"
+                    android:background="@drawable/toggle_selector"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPaypalBlue"
+                    android:textOff="Different"
+                    android:textOn="Different" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="48"
+                    android:background="@drawable/toggle_selector"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPaypalBlue"
+                    android:textOff="Missing parts"
+                    android:textOn="Missing parts" />
+
+                <ToggleButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="48"
+                    android:background="@drawable/toggle_selector"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPaypalBlue"
+                    android:textOff="Other"
+                    android:textOn="Other" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Provide additional information"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Don't include any confidential information." />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/submit_button"
+                android:padding="10dp"
+                android:text="Submit"
+                android:textColor="@color/colorWhite" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cancel_button"
+                android:padding="10dp"
+                android:text="Cancel"
+                android:textColor="@color/colorPaypalBlue" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.widget.ScrollView>
